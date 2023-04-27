@@ -1,0 +1,9 @@
+
+<figure class="img-container">
+  <button mat-flat-button color="primary" (click)="removeFromFavorites(detailedItem.download_url)">
+    <span>Remove from Favorites</span>
+  </button>
+  <img ngSrc="{{detailedItem.download_url}}" alt="{{detailedItem.url}}" width="550" height="700"
+    priority mat-raised-button>
+    <figcaption>Author: {{detailedItem.author}}</figcaption>
+</figure >

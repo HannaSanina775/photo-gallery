@@ -1,0 +1,14 @@
+<mat-grid-list cols="3" onscroll="onScroll()">
+  <mat-grid-tile *ngFor="let item of photoData">
+    <figure class="img-container">
+      <img ngSrc="{{item.download_url}}" alt="{{item.url}}" width="250" height="300"
+        priority (click)="addToFavorite(item)" mat-raised-button
+        matTooltip="Click to add to Favorites">
+        <figcaption>Author: {{item.author}}</figcaption>
+    </figure >
+  </mat-grid-tile>
+</mat-grid-list>
+<div class="spinner-container">
+   <mat-spinner *ngIf="showLoader"></mat-spinner>
+</div>
+

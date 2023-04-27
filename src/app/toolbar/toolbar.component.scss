@@ -1,0 +1,21 @@
+.nav-button {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #666666;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  border-radius: 4px;
+}
+.active {
+  border: 1px solid #41474c;
+  background-color: lightblue;
+  border-radius: 4px;
+}
+
+.mat-toolbar-single-row {
+  justify-content: space-evenly;
+}

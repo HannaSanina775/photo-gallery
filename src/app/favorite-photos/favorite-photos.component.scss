@@ -1,0 +1,31 @@
+mat-grid-tile {
+  background: rgb(195 204 207);
+}
+
+.img-container {
+  background-color: grey;
+  border: 40px solid grey;
+  margin: 8px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+}
+
+.img-container * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.img-container img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.img-container:hover > img {
+  opacity: 0.3;
+}
+
+.img-container:hover figcaption {
+  opacity: 1;
+}

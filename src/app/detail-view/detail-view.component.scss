@@ -1,0 +1,27 @@
+.img-container {
+  background-color: grey;
+  border: 40px solid grey;
+  margin: 8px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+}
+
+.img-container img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+button {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #666666;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  border-radius: 4px;
+}

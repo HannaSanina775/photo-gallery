@@ -1,0 +1,11 @@
+<mat-grid-list cols="3">
+  <mat-grid-tile *ngFor="let item of favPhotoData">
+    <figure class="img-container">
+      <img ngSrc="{{item.download_url}}" alt="{{item.url}}" width="250" height="300"
+        priority mat-raised-button
+        matTooltip="Open photo details"
+        [routerLink]="['/photos', item.id]">
+        <figcaption>Author: {{item.author}}</figcaption>
+    </figure >
+  </mat-grid-tile>
+</mat-grid-list>
